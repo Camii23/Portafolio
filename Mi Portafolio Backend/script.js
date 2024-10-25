@@ -11,5 +11,11 @@ function descargarCV() {
 // Formulario
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Mensaje enviado correctamente');
+    
+    Swal.fire({
+        icon: "success",
+        title: "Mensaje enviado correctamente",
+        showConfirmButton: false,
+        timer: 1500
+      });
 });

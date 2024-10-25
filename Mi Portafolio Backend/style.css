@@ -5,20 +5,28 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-}
+} */
 
 /* navbar */
+
 nav {
     width: 100%;
     height: 15vh;
-    /* position: fixed; */
-    
+    background: #fafafa00;
+    backdrop-filter: blur(0.4rem);
+    padding-bottom: 15vh;
+    z-index: 1;
+    /* position: fixed; */    
+}
+
+.navbar {
+    position: fixed; 
     
 }
 
@@ -29,7 +37,7 @@ nav {
 
 .brand a {
     color: #EEEEEE; 
-    font-size: 20px;
+    font-size: 17px;
 }
 
 ul {
@@ -55,11 +63,17 @@ nav ul li a:hover {
 
 
 /* inicio */
+
+#inicio-section {
+    padding-top: 15vh;
+}
+
 .contenedor {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
+    /* padding-top: 15vh; */
     text-align: center;
     display: flex;
 }
@@ -88,42 +102,47 @@ nav ul li a:hover {
     font: bold;
 }
 
-.btn {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: #F6C401;
-    color: #1B1C2F;
+.btn-contact {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #313540;
+    color: #EEEEEE;
     border: none;
-    padding: 5px 20px;
+    padding: 8px 30px;
     font-size: 18px;
     cursor: pointer;
     border-radius: 30px;    
     font-weight: bold;
-    height: 40px;
+    height: 48px;
+    text-decoration: none;
+    width: 216px;
 }
 
-.btn:hover {
+.btn-contact:hover {
     background-color: #F9A300;
     color: #1B1C2F;
 }
 
-.button {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: #313540;
-    color: #EEEEEE;
+.button-download {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #F6C401;
+    color: #1B1C2F;
     border: none;
-    padding: 8.3px 20px;
+    padding: 8px 20px;
     font-size: 18px;
     cursor: pointer;
     border-radius: 30px;
     font-weight: bold;
     align-items: center;
-    height: 41px;
+    height: 48px;
+    width: 216px;
     text-decoration: none;
+    justify-content: center;
+    
 }
 
 ion-icon {
     margin-left: 5px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .button:hover {
@@ -165,7 +184,7 @@ ion-icon {
 
 .about-me p{
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .title-sobreMi {
@@ -365,7 +384,7 @@ h1 {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .input-group input {
@@ -375,7 +394,7 @@ h1 {
     border: none;
     border-radius: 10px;
     color: #EEEEEE;
-    font-weight: bold;
+    /* font-weight: bold; */
     flex: 1;
 }
 
@@ -387,23 +406,24 @@ textarea {
     border-radius: 10px;
     color: #EEEEEE;
     margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: bold; */
 }
 
 #sendBtn {
-    width: 40%;
+    height: 48px;
+    width: 216px;
     padding: 5px 10px;
     display: flex;
     background-color: #F6C401;
     color: #1B1C2F;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
 }

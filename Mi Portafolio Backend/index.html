@@ -22,7 +22,7 @@
 
     <!-- Navbar -->
     <header>
-        <nav>
+        <nav class="navbar">
             <label for="" class="brand">
                 <a href="#inicio-section">
                     <img src="IMG/logos/peeps-avatar-alpha.png" alt="Logo" width="70" height="70" class="logo-nav">
@@ -46,8 +46,8 @@
             <div class="header">
                 <h1 class="title"><span class="hola">Hola,</span><span class="bienvenido"> bienvenid@!</span></h1>
                 
-                <a class="btn shared-style" href="#contact-section">Contáctame</a>
-                <a href="CV_Camila_Jimenez.pdf" download class="button" onclick="descargarCV()">
+                <a class="btn-contact shared-style" href="#contact-section">Contáctame</a>
+                <a href="../PDF/CV_Camila_Jimenez.pdf" download class="button-download" onclick="descargarCV()">
                     Descargar CV <ion-icon name="download-outline"></ion-icon>
                 </a>
             </div>
@@ -63,10 +63,10 @@
         <div class="contenedor-mi">
             <div class="about-me">
                 <h1 class="title-sobreMi"><span class="sobre">Sobre</span><span class="mi"> mí</span></h1>
-                <p>Mi nombre es Camila Jimenez. 
+                <p>Mi nombre es Camila Jiménez. 
                     Soy desarrolladora Back End y estudiante de biología, con conocimiento en lógica, base de 
                     datos e integración de sistemas utilizando lenguajes como Python y Java, así como bases de 
-                    datos como SQL y NoSQL. Mi objetivo es asegurarme del correcto funcionamiento del Back End 
+                    datos como SQL. Mi objetivo es asegurarme del correcto funcionamiento del Back End 
                     para proporcionar al usuario una experiencia fluida.
                 </p>
                 
@@ -150,12 +150,12 @@
                 </div>
             </div>
             <div class="right-section">
-                <form>
+                <form autocomplete="off" id="contactForm" action="https://formspree.io/f/xvgpjpnk" method="POST">
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Nombre" required>
-                        <input type="email" id="email" placeholder="Correo" required>
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Correo" required>
                     </div>
-                    <textarea id="message" rows="10" placeholder="Tu Mensaje" required></textarea>
+                    <textarea name="message" rows="10" placeholder="Tu Mensaje" required></textarea>
                     <button type="submit" id="sendBtn">Enviar Mensaje<ion-icon name="paper-plane-outline"></ion-icon></button>
                 </form>
             </div>
